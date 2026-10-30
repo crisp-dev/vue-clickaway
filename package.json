@@ -1,7 +1,7 @@
 {
-  "name": "vue-clickaway",
+  "name": "@crisp-fix/vue-clickaway",
   "description": "Reusable clickaway directive for reusable Vue.js components",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "author": "Denis Karabaza <denis.karabaza@gmail.com>",
   "browserify": {
     "transform": [
@@ -32,6 +32,12 @@
   ],
   "license": "MIT",
   "main": "dist/vue-clickaway.common.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "vue": "^3.2.1"
   },
@@ -42,6 +48,6 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint index.js directive.js mixin.js build.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "_build": "node build.js"
+    "build": "node build.js"
   }
 }
